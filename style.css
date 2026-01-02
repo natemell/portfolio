@@ -60,6 +60,7 @@ body::before {
   max-width: 900px;
   margin: 5rem auto;
   padding: 0 1.5rem;
+  text-align: center;
 }
 
 .section h2 {
@@ -69,13 +70,36 @@ body::before {
 }
 
 .embed {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
   background: var(--stone);
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .links {
   list-style: none;
+  padding: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 0.75rem;
+}
 }
 
 .links li {
@@ -93,6 +117,10 @@ body::before {
 .links a:hover,
 .section a:hover {
   color: white;
+}
+.section p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
 }
 
 footer {

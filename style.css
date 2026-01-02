@@ -53,7 +53,15 @@ body {
   margin: 5rem auto;
   padding: 0 1.5rem;
 }
-
+.section a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  letter-spacing: 0.05em;
+}
+.section a:hover {
+  color: white;
+}
 .section h2 {
   font-family: 'Cinzel', serif;
   margin-bottom: 1.5rem;

@@ -113,7 +113,15 @@ body {
   max-width: 600px;
   margin: 0 auto 1.5rem auto;
 }
-
+.section a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  letter-spacing: 0.05em;
+}
+.section a:hover {
+  color: white;
+}
 footer {
   text-align: center;
   padding: 3rem 0;

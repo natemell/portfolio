@@ -122,6 +122,22 @@ body {
 .section a:hover {
   color: white;
 }
+.track {
+  margin: 2.5rem auto;
+  max-width: 600px;
+}
+
+.track-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+}
+audio {
+  width: 100%;
+  filter: invert(90%);
+  opacity: 0.85;
+}
 footer {
   text-align: center;
   padding: 3rem 0;

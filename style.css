@@ -1,0 +1,86 @@
+:root {
+  --bg: #0f1113;
+  --stone: #1c1f23;
+  --text: #e6e3dc;
+  --muted: #a7a39a;
+  --accent: #7c7a73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 0.15em;
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.section {
+  max-width: 900px;
+  margin: 5rem auto;
+  padding: 0 1.5rem;
+}
+
+.section h2 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+.embed {
+  margin-bottom: 3rem;
+  background: var(--stone);
+  padding: 1rem;
+}
+
+.links {
+  list-style: none;
+}
+
+.links li {
+  margin-bottom: 0.75rem;
+}
+
+.links a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+.links a:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}

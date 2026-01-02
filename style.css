@@ -90,3 +90,9 @@ footer {
   color: var(--muted);
   font-size: 0.8rem;
 }
+.logo {
+  max-width: 320px;
+  width: 70%;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}

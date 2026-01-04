@@ -36,6 +36,11 @@ body {
   max-width: 320px;
   margin-bottom: 1.5rem;
   opacity: 0.95;
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.25rem;
+}
 }
 
 .role-line {
@@ -181,3 +186,9 @@ main {
   margin: 4rem auto 0 !important;
   opacity: 0.45;
 }
+  .footer-logo {
+  width: 36px !important;
+  height: auto !important;
+  display: block;
+  margin: 4rem auto 0;
+  opacity: 0.45;

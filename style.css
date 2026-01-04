@@ -157,3 +157,18 @@ main {
   margin: 0 auto;
   padding: 6rem 2rem;
 </main>
+.contact {
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 8rem;
+}
+.contact a {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+  .social a {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  letter-spacing: 0.2em;
+}

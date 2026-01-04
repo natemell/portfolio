@@ -33,14 +33,11 @@ body {
 }
 
 .logo {
-  max-width: 320px;
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
   width: 140px;
   height: auto;
   display: block;
   margin: 0 auto 1.25rem;
-}
+  opacity: 0.95;
 }
 
 .role-line {
@@ -52,16 +49,13 @@ body {
   opacity: 0.9;
   margin-bottom: 0.5rem;
 }
+
 .section {
   max-width: 900px;
   margin: 5rem auto;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem 0;
   text-align: center;
-.section {
-  margin: 4rem 0;
-  padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.06);
-}
 }
 
 .section h2 {
@@ -73,6 +67,12 @@ body {
   color: #d4d7dc;
   margin-bottom: 2.5rem;
 }
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
 .embed {
   margin: 3rem auto;
   background: var(--stone);
@@ -84,26 +84,6 @@ body {
 .links {
   list-style: none;
   padding: 0;
-}
-
-.links {
-  list-style: none;
-  padding: 0;
-}
-
-.links {
-  list-style: none;
-  padding: 0;
-}
-
-.links {
-  list-style: none;
-  padding: 0;
-}
-
-.links li {
-  margin-bottom: 0.75rem;
-}
 }
 
 .links li {
@@ -122,22 +102,11 @@ body {
 .section a:hover {
   color: white;
 }
-.section p {
-  max-width: 600px;
-  margin: 0 auto 1.5rem auto;
-}
-.section a {
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid var(--accent);
-  letter-spacing: 0.05em;
-}
-.section a:hover {
-  color: white;
-}
+
 .track {
- margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
+
 .track-title,
 .links a {
   font-family: 'Cinzel', serif;
@@ -145,48 +114,40 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
+
 audio {
   width: 100%;
   filter: invert(90%);
   opacity: 0.85;
 }
-footer {
-  text-align: center;
-  padding: 3rem 0;
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-main {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 6rem 2rem;
-</main>
+
 .contact {
   text-align: center;
   opacity: 0.6;
   margin-top: 8rem;
 }
+
 .contact a {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-  .social a {
+
+.social a {
   font-size: 0.75rem;
   opacity: 0.5;
   letter-spacing: 0.2em;
 }
-  .footer-logo {
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.footer-logo {
   width: 36px !important;
-  max-width: 36px !important;
   height: auto !important;
   display: block !important;
-  margin: 4rem auto 0 !important;
+  margin: 0 auto !important;
   opacity: 0.45;
 }
-  .footer-logo {
-  width: 36px !important;
-  height: auto !important;
-  display: block;
-  margin: 4rem auto 0;
-  opacity: 0.45;

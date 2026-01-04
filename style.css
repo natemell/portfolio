@@ -34,7 +34,6 @@ body {
 
 .logo {
   max-width: 320px;
-  width: 70%;
   margin-bottom: 1.5rem;
   opacity: 0.95;
 }
@@ -176,9 +175,9 @@ main {
 }
   .footer-logo {
   width: 36px !important;
-  max-width: 42px !important;
+  max-width: 36px !important;
   height: auto !important;
-  display: block;
-  margin: 4rem auto 0;
+  display: block !important;
+  margin: 4rem auto 0 !important;
   opacity: 0.45;
 }

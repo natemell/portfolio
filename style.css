@@ -23,6 +23,8 @@ body {
   line-height: 1.6;
 }
 
+/* ================= HERO ================= */
+
 .hero {
   min-height: 70vh;
   display: flex;
@@ -30,6 +32,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  animation: fadeUp 1.4s ease-out forwards;
+  opacity: 0;
 }
 
 .logo {
@@ -38,6 +43,8 @@ body {
   display: block;
   margin: 0 auto 0.5rem;
   opacity: 0.95;
+
+  animation: fadeUp 1.4s ease-out forwards;
 }
 
 .role-line {
@@ -48,7 +55,12 @@ body {
   font-weight: 600;
   opacity: 0.9;
   margin-bottom: 0.5rem;
+
+  animation: fadeUp 1.4s ease-out forwards;
+  animation-delay: 0.25s;
 }
+
+/* ================= SECTIONS ================= */
 
 .section {
   max-width: 900px;
@@ -73,6 +85,27 @@ body {
   margin: 0 auto 1.5rem;
 }
 
+/* ================= AUDIO ================= */
+
+.track {
+  margin-bottom: 3.5rem;
+}
+
+.track-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+audio {
+  width: 100%;
+  filter: invert(90%);
+  opacity: 0.85;
+}
+
+/* ================= EMBEDS ================= */
+
 .embed {
   margin: 3rem auto;
   background: var(--stone);
@@ -80,6 +113,8 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* ================= LINKS ================= */
 
 .links {
   list-style: none;
@@ -103,23 +138,7 @@ body {
   color: white;
 }
 
-.track {
-  margin-bottom: 3.5rem;
-}
-
-.track-title,
-.links a {
-  font-family: 'Cinzel', serif;
-  letter-spacing: 0.12em;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-audio {
-  width: 100%;
-  filter: invert(90%);
-  opacity: 0.85;
-}
+/* ================= CONTACT ================= */
 
 .contact {
   text-align: center;
@@ -139,18 +158,23 @@ audio {
   letter-spacing: 0.2em;
 }
 
+/* ================= FOOTER ================= */
+
 footer {
   text-align: center;
   padding: 3rem 0;
 }
 
 .footer-logo {
-  width: 42px !important;
-  height: auto !important;
-  display: block !important;
-  margin: 0 auto !important;
+  width: 42px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   opacity: 0.45;
 }
+
+/* ================= MOBILE FIX ================= */
+
 @media (max-width: 480px) {
   .role-line {
     max-width: 90%;
@@ -159,11 +183,9 @@ footer {
     letter-spacing: 0.22em;
     word-break: break-word;
   }
-/* Subtle fade-in on load */
-.hero {
-  animation: fadeUp 1.4s ease-out forwards;
-  opacity: 0;
 }
+
+/* ================= ANIMATION ================= */
 
 @keyframes fadeUp {
   from {
@@ -174,11 +196,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-.logo {
-  animation: fadeUp 1.4s ease-out forwards;
-}
-
-.role-line {
-  animation: fadeUp 1.4s ease-out forwards;
-  animation-delay: 0.25s;
 }

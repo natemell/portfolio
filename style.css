@@ -66,6 +66,25 @@ body {
   letter-spacing: 0.34em;
   font-size: 0.95rem;
   opacity: 0.9;
+  text-align: center;
+}
+
+/* Desktop: force single line */
+.role-line span {
+  display: inline;
+}
+
+/* Mobile: split into two lines */
+@media (max-width: 480px) {
+  .role-line {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    letter-spacing: 0.24em;
+  }
+
+  .role-line span {
+    display: block;
+  }
 }
 
 /* Desktop: no line break */

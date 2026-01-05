@@ -159,3 +159,26 @@ footer {
     letter-spacing: 0.22em;
     word-break: break-word;
   }
+/* Subtle fade-in on load */
+.hero {
+  animation: fadeUp 1.4s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.logo {
+  animation: fadeUp 1.4s ease-out forwards;
+}
+
+.role-line {
+  animation: fadeUp 1.4s ease-out forwards;
+  animation-delay: 0.25s;
+}

@@ -199,17 +199,25 @@ footer {
   display: inline;
 }
 
-/* Mobile-only typography rules */
+/* ===== TAGLINE VISIBILITY CONTROL ===== */
+
+/* Desktop default */
+.role-desktop {
+  display: block;
+}
+
+.role-mobile {
+  display: none;
+}
+
+/* Mobile only */
 @media (max-width: 480px) {
-  .desktop-dot {
+  .role-desktop {
     display: none;
   }
 
-  .mobile-break {
-    display: inline;
-  }
-
-  .role-line {
+  .role-mobile {
+    display: block;
     font-size: 1.15rem;
     line-height: 1.9;
     letter-spacing: 0.22em;

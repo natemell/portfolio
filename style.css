@@ -151,3 +151,11 @@ footer {
   margin: 0 auto !important;
   opacity: 0.45;
 }
+@media (max-width: 480px) {
+  .role-line {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.8;
+    letter-spacing: 0.22em;
+    word-break: break-word;
+  }

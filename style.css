@@ -183,7 +183,6 @@ footer {
   .mobile-break {
     display: inline;
   }
-}
 
 /* ================= FADE-IN ANIMATION ================= */
 
@@ -195,5 +194,24 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  /* Dot behavior control */
+.desktop-dot {
+  display: inline;
+}
+
+/* Mobile-only typography rules */
+@media (max-width: 480px) {
+  .desktop-dot {
+    display: none;
+  }
+
+  .mobile-break {
+    display: inline;
+  }
+
+  .role-line {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    letter-spacing: 0.22em;
   }
 }

@@ -222,3 +222,19 @@ footer {
   height: auto;
   opacity: 0.45;
 }
+/* Hide line break on desktop */
+.mobile-break {
+  display: none;
+}
+
+/* Show line break ONLY on mobile */
+@media (max-width: 480px) {
+  .mobile-break {
+    display: inline;
+  }
+  .role-line {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    letter-spacing: 0.24em;
+  }
+}

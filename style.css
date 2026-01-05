@@ -212,4 +212,27 @@ footer {
     line-height: 1.8;
     letter-spacing: 0.22em;
   }
+/* ===== TAGLINE FINAL CONTROL ===== */
+
+/* Desktop default */
+.role-line {
+  font-size: 0.9rem;
+}
+
+/* Force-hide mobile line break on desktop */
+.mobile-break {
+  display: none !important;
+}
+
+/* Mobile only */
+@media (max-width: 480px) {
+  .role-line {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    letter-spacing: 0.22em;
+  }
+
+  .mobile-break {
+    display: inline !important;
+  }
 }

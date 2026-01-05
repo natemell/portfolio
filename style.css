@@ -13,17 +13,15 @@
 }
 
 body {
-  background: radial-gradient(
-    ellipse at top,
-    #1a1d21 0%,
-    #0f1113 60%
-  );
+  background: radial-gradient(ellipse at top, #1a1d21 0%, #0f1113 60%);
   color: var(--text);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 
-/* ================= HERO ================= */
+/* ======================
+   HERO
+   ====================== */
 
 .hero {
   min-height: 70vh;
@@ -32,29 +30,65 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
 
-  /* Unified fade-in for all children */
-  animation: fadeUp 1.4s ease-out forwards;
+.fade-in {
   opacity: 0;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .logo {
-  width: 140px;
+  width: 150px;
   height: auto;
   margin-bottom: 0.75rem;
   opacity: 0.95;
 }
 
+/* ======================
+   TAGLINE
+   ====================== */
+
 .role-line {
   font-family: 'Inter', sans-serif;
-  font-size: 1.05rem;      /* Desktop tagline size */
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  font-size: 0.95rem;
   opacity: 0.9;
 }
 
-/* ================= SECTIONS ================= */
+/* Desktop: no line break */
+.mobile-break {
+  display: none;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+  .role-line {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    letter-spacing: 0.24em;
+  }
+
+  .mobile-break {
+    display: inline;
+  }
+}
+
+/* ======================
+   SECTIONS
+   ====================== */
 
 .section {
   max-width: 900px;
@@ -79,7 +113,9 @@ body {
   margin: 0 auto 1.5rem;
 }
 
-/* ================= AUDIO ================= */
+/* ======================
+   AUDIO
+   ====================== */
 
 .track {
   margin-bottom: 3.5rem;
@@ -90,6 +126,7 @@ body {
   letter-spacing: 0.12em;
   font-size: 0.8rem;
   text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
 audio {
@@ -98,21 +135,12 @@ audio {
   opacity: 0.85;
 }
 
-/* ================= EMBED ================= */
-
-.embed {
-  margin: 3rem auto;
-  background: var(--stone);
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-/* ================= LINKS ================= */
+/* ======================
+   LINKS
+   ====================== */
 
 .links {
   list-style: none;
-  padding: 0;
 }
 
 .links li {
@@ -132,10 +160,23 @@ audio {
   color: white;
 }
 
-/* ================= CONTACT ================= */
+/* ======================
+   EMBED
+   ====================== */
+
+.embed {
+  margin: 3rem auto;
+  background: var(--stone);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ======================
+   CONTACT + FOOTER
+   ====================== */
 
 .contact {
-  text-align: center;
   opacity: 0.6;
   margin-top: 8rem;
 }
@@ -152,8 +193,6 @@ audio {
   letter-spacing: 0.2em;
 }
 
-/* ================= FOOTER ================= */
-
 footer {
   text-align: center;
   padding: 3rem 0;
@@ -162,64 +201,5 @@ footer {
 .footer-logo {
   width: 42px;
   height: auto;
-  display: block;
-  margin: 0 auto;
   opacity: 0.45;
-}
-
-/* ================= MOBILE TAGLINE ================= */
-
-.mobile-break {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .role-line {
-    font-size: 1.15rem;    /* Bigger mobile tagline */
-    line-height: 1.9;
-    letter-spacing: 0.22em;
-  }
-
-  .mobile-break {
-    display: inline;
-  }
-
-/* ================= FADE-IN ANIMATION ================= */
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  /* Dot behavior control */
-.desktop-dot {
-  display: inline;
-}
-
-/* ===== TAGLINE VISIBILITY CONTROL ===== */
-
-/* Desktop default */
-.role-desktop {
-  display: block;
-}
-
-.role-mobile {
-  display: none;
-}
-
-/* Mobile only */
-@media (max-width: 480px) {
-  .role-desktop {
-    display: none;
-  }
-
-  .role-mobile {
-    display: block;
-    font-size: 1.15rem;
-    line-height: 1.9;
-    letter-spacing: 0.22em;
-  }
 }

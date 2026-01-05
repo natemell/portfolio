@@ -183,7 +183,7 @@ footer {
     letter-spacing: 0.22em;
     word-break: break-word;
   }
-}
+
 
 /* ================= ANIMATION ================= */
 
@@ -195,5 +195,21 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* Hide manual line break on desktop */
+.mobile-break {
+  display: none;
+}
+
+/* Show manual line break on phones */
+@media (max-width: 480px) {
+  .mobile-break {
+    display: inline;
+  }
+
+  .role-line {
+    line-height: 1.8;
+    letter-spacing: 0.22em;
   }
 }

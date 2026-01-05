@@ -33,30 +33,26 @@ body {
   align-items: center;
   text-align: center;
 
-  animation: fadeUp 1.4s ease-out forwards;
+  animation: fadeUp 1.2s ease-out forwards;
   opacity: 0;
 }
 
 .logo {
   width: 140px;
   height: auto;
-  display: block;
-  margin: 0 auto 0.5rem;
+  margin-bottom: 0.75rem;
   opacity: 0.95;
-
-  animation: fadeUp 1.4s ease-out forwards;
 }
 
 .role-line {
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.32em;
+  font-size: 1.05rem;            /* BIGGER desktop */
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   font-weight: 600;
   opacity: 0.9;
-  margin-bottom: 0.5rem;
 
-  animation: fadeUp 1.4s ease-out forwards;
+  animation: fadeUp 1.2s ease-out forwards;
   animation-delay: 0.25s;
 }
 
@@ -104,7 +100,7 @@ audio {
   opacity: 0.85;
 }
 
-/* ================= EMBEDS ================= */
+/* ================= EMBED ================= */
 
 .embed {
   margin: 3rem auto;
@@ -173,66 +169,33 @@ footer {
   opacity: 0.45;
 }
 
-/* ================= MOBILE FIX ================= */
+/* ================= MOBILE TAGLINE ================= */
+
+.mobile-break {
+  display: none;
+}
 
 @media (max-width: 480px) {
   .role-line {
-    max-width: 90%;
-    margin: 0 auto;
-    line-height: 1.8;
+    font-size: 1.15rem;          /* BIGGER mobile */
+    line-height: 1.9;
     letter-spacing: 0.22em;
-    word-break: break-word;
   }
 
+  .mobile-break {
+    display: inline;
+  }
+}
 
 /* ================= ANIMATION ================= */
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-/* Hide manual line break on desktop */
-.mobile-break {
-  display: none;
-}
-
-/* Show manual line break on phones */
-@media (max-width: 480px) {
-  .mobile-break {
-    display: inline;
-  }
-
-  .role-line {
-    line-height: 1.8;
-    letter-spacing: 0.22em;
-  }
-/* ===== TAGLINE FINAL CONTROL ===== */
-
-/* Desktop default */
-.role-line {
-  font-size: 0.9rem;
-}
-
-/* Force-hide mobile line break on desktop */
-.mobile-break {
-  display: none !important;
-}
-
-/* Mobile only */
-@media (max-width: 480px) {
-  .role-line {
-    font-size: 0.95rem;
-    line-height: 1.9;
-    letter-spacing: 0.22em;
-  }
-
-  .mobile-break {
-    display: inline !important;
   }
 }

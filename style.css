@@ -46,14 +46,13 @@ body {
 
 .role-line {
   font-family: 'Inter', sans-serif;
-  font-size: 1.05rem;            /* BIGGER desktop */
+  font-size: 1.05rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   font-weight: 600;
   opacity: 0.9;
 
   animation: fadeUp 1.2s ease-out forwards;
-  animation-delay: 0.25s;
 }
 
 /* ================= SECTIONS ================= */
